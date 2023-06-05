@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music Player</title>
+        <link rel="stylesheet"  href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <div class="content">
+            <div class="top-bar">
+                <span class="material-symbols-rounded">expand_more</span>
+                <span>Now Playing</span>
+                <span class="material-symbols-rounded">more_horiz</span>
+            </div>
+            <div class="image-wrapper">
+                <div class="music-image">
+                    <img src="images/img3.jpeg">
+                </div>
+            </div>
+            <div class="music-titles">
+                <p class="name">Kali Kali Zulfon Ke</p>
+                <p class="artist">Madhur Sharma</p>
+            </div>
+            <div class="progress-details">
+                <div class="progress-bar">
+                    <span></span>
+                </div>
+                <div class="time">
+                    <span class="current">0:00</span>
+                    <span class="final">5:30</span>
+                </div>
+            </div>
+            <div class="control-btn">
+                <span class="material-symbols-rounded" id="repeat">repeat</span>
+                <span class="material-symbols-rounded" id="prev">skip_previous</span>
+                <div class="play-pause">
+                    <span class="material-symbols-rounded" id="play-pause" >play_arrow</span>
+                </div>
+                <span class="material-symbols-rounded" id="next">skip_next</span>
+                <span class="material-symbols-rounded" id="shuffle">shuffle</span>
+                
+                
+            </div>
+        </div>
+        <audio src="songs/Kali Kali Zulfon Ke.mp3" class="main-song"></audio>
+        <script src="playlist.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
